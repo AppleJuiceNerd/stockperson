@@ -2,11 +2,11 @@ import random
 import string
 
 # Very simple csv creation function
-def make_csv(filename: str):
+def make_csv(filename: str, length: int):
 	file = open(filename, "wt")
 	lines = []
 
-	for i in range(50):
+	for i in range(length):
 		row = []
 
 		for o in range(5):
@@ -17,4 +17,4 @@ def make_csv(filename: str):
 	file.writelines(lines)
 		
 
-make_csv("test.csv")
+make_csv("test.csv", 70)
