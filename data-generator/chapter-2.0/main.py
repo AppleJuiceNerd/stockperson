@@ -1,5 +1,6 @@
 import random
 import string
+import objects
 
 # Very simple csv creation function
 def make_csv(filename: str, length: int):
